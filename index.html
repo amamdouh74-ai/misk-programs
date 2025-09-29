@@ -1,174 +1,84 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AWS Certified Solutions Architect — Program Detail (Demo)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --teal: #00BFA6;
-      --dark: #1b1b1f;
-      --muted: #6b7280;
-      --card-bg: #fff;
-      --page-bg: #f6f7fb;
-      --maxw: 1100px;
-    }
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--page-bg);color:var(--dark);}
-    .container{max-width:var(--maxw);margin:28px auto;padding:0 20px;}
-    .hero{
-      position:relative;
-      height:340px;
-      border-radius:8px;
-      overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:white;
-      margin-bottom:18px;
-      background-image:linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3b4d3a3efb3b3d4e2b6a3a7f1b2a8c');
-      background-size:cover;
-      background-position:center;
-    }
-    .hero .inner{ text-align:center; padding: 20px; }
-    .hero h1{font-size:34px;margin:0 0 8px;font-weight:700;letter-spacing:-0.2px;}
-    .hero p{margin:0;font-size:16px;color:rgba(255,255,255,0.92);max-width:920px;}
-    .meta{
-      display:flex;
-      gap:20px;
-      align-items:center;
-      justify-content:center;
-      margin-top:12px;
-      flex-wrap:wrap;
-    }
-    .pill{background:rgba(255,255,255,0.08);padding:6px 12px;border-radius:20px;font-size:13px;border:1px solid rgba(255,255,255,0.06);}
-    .two-col{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-bottom:24px;}
-    .card{background:var(--card-bg);padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(12,18,31,0.06);}
-    .details-list{list-style:none;padding:0;margin:0;line-height:1.7;color:var(--muted);}
-    .details-list li{margin:6px 0;}
-    .apply-area{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:flex-start;}
-    .status{font-weight:600;color:var(--teal);}
-    .apply-btn{
-      display:inline-block;background:var(--teal);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;
-      box-shadow:0 6px 18px rgba(0,191,166,0.14);
-    }
-    .apply-btn[disabled]{opacity:0.5;pointer-events:none}
-    h2{font-size:20px;margin:0 0 12px;}
-    p.lead{color:var(--muted);line-height:1.7}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 24px;}
-    .feature{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:8px;border:1px solid #eef2f6;text-align:center;font-weight:600;color:var(--dark);}
-    ol{padding-left:18px;color:var(--muted);}
-    ul{padding-left:18px;color:var(--muted);}
-    .faq details{background:#fff;padding:12px;border-radius:8px;margin-bottom:10px;border:1px solid #eef2f6;}
-    .faq summary{font-weight:600;cursor:pointer;outline:none;}
-    .meta-line{font-size:13px;color:var(--muted);margin-top:6px}
-    @media (max-width:900px){
-      .two-col{grid-template-columns:1fr; }
-      .grid{grid-template-columns:repeat(1,1fr);}
-      .hero{height:300px}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misk Program - Game Development with Unity</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="hero card" role="banner">
-      <div class="inner">
-        <h1>AWS Certified Solutions Architect — Associate</h1>
-        <p>Design resilient, secure, and scalable cloud architectures on AWS. Hands-on labs, expert instructors, and a capstone project to prepare you for real‑world cloud roles.</p>
-        <div class="meta" aria-hidden="true">
-          <span class="pill">In‑Person</span>
-          <span class="pill">30 Nov 2025 – 04 Dec 2025</span>
-          <span class="pill">Language: Arabic</span>
-        </div>
-      </div>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <img src="images/unity-banner.jpg" alt="Unity Banner">
+    <div class="hero-text">
+      <h1>Game Development with Unity</h1>
+      <p>An immersive program to master Unity and create interactive games.</p>
+      <a href="#apply" class="btn">Apply Now</a>
     </div>
+  </section>
 
-    <div class="two-col">
-      <div class="card">
-        <h2>Program Overview</h2>
-        <p class="lead">This course prepares learners for the AWS Certified Solutions Architect – Associate exam by providing hands‑on labs, real projects, and expert guidance. Participants will learn to design resilient, secure, and cost‑optimized cloud architectures on AWS.</p>
+  <!-- Program Quick Info -->
+  <section class="quick-info">
+    <div><strong>Format:</strong> In-Person</div>
+    <div><strong>Dates:</strong> 10 Nov 2025 – 20 Feb 2026</div>
+    <div><strong>Language:</strong> English</div>
+  </section>
 
-        <h3 style="margin-top:14px">Program Outcomes</h3>
-        <ul>
-          <li>Design scalable and resilient systems on AWS</li>
-          <li>Implement infrastructure as code and automated deployments</li>
-          <li>Apply security best practices and cost optimization</li>
-          <li>Earn a completion certificate</li>
-        </ul>
+  <!-- Program Overview -->
+  <section>
+    <h2>Program Overview</h2>
+    <p>
+      This program equips participants with hands-on Unity development skills, from basic scripting to publishing complete games...
+    </p>
+  </section>
 
-        <h3 style="margin-top:14px">Program Highlights</h3>
-        <div class="grid" role="list">
-          <div class="feature">Hands‑on Labs</div>
-          <div class="feature">Capstone Project</div>
-          <div class="feature">AWS Credits & Mentorship</div>
-        </div>
+  <!-- Program Outcomes -->
+  <section>
+    <h2>Program Outcomes</h2>
+    <ul>
+      <li>Hands-on Unity development</li>
+      <li>Game publishing skills</li>
+      <li>Collaboration and teamwork</li>
+    </ul>
+  </section>
 
-        <h3>Application Process</h3>
-        <ol>
-          <li>Sign Up and create your profile</li>
-          <li>Complete the application form</li>
-          <li>Evaluation by admissions team</li>
-          <li>Virtual interview for shortlisted applicants</li>
-          <li>Placement & confirmation via email</li>
-        </ol>
-      </div>
+  <!-- Highlights -->
+  <section class="highlights">
+    <div><h3>📍 Location</h3><p>Riyadh, Saudi Arabia</p></div>
+    <div><h3>🎯 Audience</h3><p>Fresh graduates & tech enthusiasts</p></div>
+    <div><h3>🌟 Benefits</h3><p>Workshops, Career Coaching, Stipend</p></div>
+  </section>
 
-      <aside class="card" aria-labelledby="apply-area">
-        <div id="apply-area" class="apply-area" role="region">
-          <div style="text-align:center">
-            <div class="status">Applications open</div>
-            <div class="meta-line">Open: <strong>02 Nov 2025</strong> • Close: <strong>15 Nov 2025</strong></div>
-          </div>
-          <a class="apply-btn" href="https://example.com/apply" target="_blank" rel="noopener">Apply Now</a>
+  <!-- Application Process -->
+  <section>
+    <h2>Application Process</h2>
+    <ol>
+      <li>Sign Up</li>
+      <li>Apply</li>
+      <li>Evaluation</li>
+      <li>Interview</li>
+      <li>Enrollment</li>
+    </ol>
+  </section>
 
-          <div style="margin-top:6px;font-size:13px;color:var(--muted);text-align:center;">
-            <strong>Location</strong><div>Riyadh, Saudi Arabia</div>
-          </div>
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>When is the registration deadline?</summary>
+      <p>Applications close on 30 Sep 2025.</p>
+    </details>
+    <details>
+      <summary>Will I receive a certificate?</summary>
+      <p>Yes, all successful participants will receive a completion certificate.</p>
+    </details>
+  </section>
 
-          <div style="margin-top:10px">
-            <h3 style="margin:8px 0 6px">Eligibility</h3>
-            <ul style="margin:0;padding-left:18px;color:var(--muted)">
-              <li>Saudi National</li>
-              <li>Diploma/Bachelor/Master in relevant field</li>
-              <li>GPA ≥ 3.75/5 or equivalent</li>
-              <li>Fresh graduate or ≤ 2 years experience</li>
-            </ul>
-          </div>
-        </div>
-      </aside>
-    </div>
+  <!-- Apply Now -->
+  <section id="apply">
+    <a href="https://yourformlink.com" class="btn">Apply Now</a>
+  </section>
 
-    <div class="card" style="margin-bottom:18px">
-      <h2>Skills You Will Gain</h2>
-      <ul>
-        <li>Leadership</li>
-        <li>Interpersonal skills</li>
-        <li>Problem solving</li>
-        <li>Decision making</li>
-        <li>Communication</li>
-      </ul>
-    </div>
-
-    <div class="card faq">
-      <h2>Frequently Asked Questions</h2>
-      <details>
-        <summary>When is the registration deadline?</summary>
-        <p>Registration opens on 02 Nov 2025 and closes on 15 Nov 2025. Applicants will receive an update within 4–6 weeks.</p>
-      </details>
-      <details>
-        <summary>Is the video part of the application mandatory?</summary>
-        <p>Video submission is optional unless stated otherwise in the application form.</p>
-      </details>
-      <details>
-        <summary>Will I receive updates on my application status?</summary>
-        <p>Yes — all applicants receive updates via email regarding their application status.</p>
-      </details>
-      <details>
-        <summary>Do interns receive a completion certificate?</summary>
-        <p>Yes. Successful participants will receive a Misk Traineeship Program completion certificate.</p>
-      </details>
-    </div>
-  </div>
 </body>
 </html>
